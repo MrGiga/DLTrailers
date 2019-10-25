@@ -6,4 +6,6 @@ RUN pip install unidecode==1.1.0
 
 ADD https://raw.githubusercontent.com/airship-david/Trailer-Downloader/master/download.py /scripts/download.py
 
-RUN CHMOD +x /scripts/download.py
+RUN chmod +x /scripts/download.py &&\
+    mkdir /scripts/downloads &&\
+    chmod 777 /scripts/downloads
