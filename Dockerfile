@@ -9,4 +9,4 @@ ADD https://raw.githubusercontent.com/airship-david/Trailer-Downloader/master/do
 RUN chmod +x /scripts/download.py &&\
     mkdir /scripts/downloads &&\
     chmod 777 /scripts/download.py &&\
-    chmod 666 /scripts/download
+    chmod 666 /scripts/downloads
