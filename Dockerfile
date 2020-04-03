@@ -6,10 +6,8 @@ RUN apk add --no-cache python3 &&\
     pip3 install youtube-dl==2020.1.15 &&\
     pip3 install unidecode==1.1.1
     
-ADD https://raw.githubusercontent.com/airship-david/Trailer-Downloader/master/download.py /scripts/download.py
-ADD https://raw.githubusercontent.com/airship-david/Trailer-Downloader/master/download_tautulli.py /scripts/download_tautulli.py
+ADD https://github.com/airship-david/Trailer-Downloader/blob/2ceb31d13862af29a1849e26244847f39d51fbbc/download.py /scripts/download.py
 
 RUN mkdir /scripts/downloads &&\
     chmod 777 /scripts/download.py &&\
-    chmod 777 /scripts/download_tautulli.py &&\
     chmod 666 /scripts/downloads
