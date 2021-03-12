@@ -1,6 +1,6 @@
 FROM linuxserver/tautulli:latest
 
-RUN apk add --no-cache python3 ffmpeg &&\
+RUN apk add --no-cache python3 py3-pip ffmpeg &&\
     pip3 install requests==2.22.0 &&\
     pip3 install tmdbsimple==2.8.0 &&\
     pip3 install youtube-dl==2021.3.3   &&\
