@@ -1,9 +1,9 @@
 FROM linuxserver/tautulli:latest
 
-RUN apk add --no-cache python3 &&\
+RUN apk add --no-cache python3 ffmpeg &&\
     pip3 install requests==2.22.0 &&\
-    pip3 install tmdbsimple==2.2.0 &&\
-    pip3 install youtube-dl==2020.1.15 &&\
+    pip3 install tmdbsimple==2.8.0 &&\
+    pip3 install youtube-dl==2021.3.3   &&\
     pip3 install unidecode==1.1.1
     
 RUN mkdir /scripts/downloads &&\
